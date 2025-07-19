@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Violet</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Thanh menu chính */
+    .navbar {
+      background-color: #1d71b8;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* M?c trong menu */
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      background-color: #155c97;
+    }
+
+    /* Menu con n?u c?n (dropdown) */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f2f2f2;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Thanh menu -->
+<div class="navbar">
+  <a href="#">Trang ch?</a>
+  <a href="#">Thu vi?n</a>
+  <div class="dropdown">
+    <a href="#">Tài nguyên ?</a>
+    <div class="dropdown-content">
+      <a href="#">Giáo án</a>
+      <a href="#">Ð? thi</a>
+      <a href="#">Bài gi?ng</a>
+    </div>
+  </div>
+  <a href="#">Di?n dàn</a>
+  <a href="#">Liên h?</a>
+</div>
+
+</body>
+</html>
